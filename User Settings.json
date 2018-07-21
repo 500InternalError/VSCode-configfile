@@ -1,33 +1,42 @@
 {
-    "C_Cpp.clang_format_sortIncludes": true,
-    "C_Cpp.errorSquiggles": "Disabled",
-    "C_Cpp.intelliSenseEngine": "Default",
-    "clang.cflags": [
-        "--target=x86_64-w64-mingw",
-        "-std=c11",
-        "-Wall"
-    ],
-    "clang.completion.enable": false,
-    "clang.cxxflags": [
-        "--target=x86_64-w64-mingw",
-        "-std=c++17",
-        "-Wall"
-    ],
-    "code-runner.clearPreviousOutput": false,
-    "code-runner.executorMap": {
-        "c": "cd $dir && gcc \"$fileName\" -o \"$fileNameWithoutExt.exe\" -Wall -g -std=c11 && & '$dir$fileNameWithoutExt.exe'",
-        "cpp": "cd $dir && g++ \"$fileName\" -o \"$fileNameWithoutExt.exe\" -Wall -g -std=c++17 && & '$dir$fileNameWithoutExt.exe'"
-    },
-    "code-runner.preserveFocus": true,
-    "code-runner.runInTerminal": true,
-    "code-runner.saveFileBeforeRun": true,
-    "editor.acceptSuggestionOnEnter": "off",
-    "editor.detectIndentation": false,
-    "editor.formatOnType": true,
-    "editor.insertSpaces": false,
-    "editor.snippetSuggestions": "top",
-    "files.defaultLanguage": "cpp",
-    "git.ignoreMissingGitWarning": true,
-    "workbench.colorTheme": "One Dark Pro",
-    "zenMode.centerLayout": false
+	"C_Cpp.clang_format_sortIncludes": true,
+	"C_Cpp.errorSquiggles": "Disabled",
+	"C_Cpp.intelliSenseEngine": "Default",
+	"clang.cflags": [
+		"--target=x86_64-w64-mingw",
+		"-std=c11",
+		"-Wall"
+	],
+	"clang.completion.enable": false,
+	"clang.cxxflags": [
+		"--target=x86_64-w64-mingw",
+		"-std=c++17",
+		"-Wall"
+	],
+	"code-runner.clearPreviousOutput": false,
+	"code-runner.executorMap": {
+		"c": "cd $dir && gcc \"$fileName\" -o \"$fileNameWithoutExt.exe\" -Wall -g -std=c11 && & '$dir$fileNameWithoutExt.exe'",
+		"cpp": "cd $dir && g++ \"$fileName\" -o \"$fileNameWithoutExt.exe\" -Wall -g -std=c++17 && & '$dir$fileNameWithoutExt.exe'"
+	},
+	"code-runner.preserveFocus": true,
+	"code-runner.runInTerminal": true,
+	"code-runner.saveFileBeforeRun": true,
+	"editor.acceptSuggestionOnEnter": "off",
+	"editor.detectIndentation": false,
+	"editor.fontFamily": "'SF Mono', 'PingFang SC', Consolas, 'Courier New', monospace",
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"editor.formatOnType": true,
+	"editor.insertSpaces": false,
+	"editor.snippetSuggestions": "top",
+	"files.autoGuessEncoding": true,
+	"files.defaultLanguage": "cpp",
+	"git.ignoreMissingGitWarning": true,
+	"terminal.integrated.fontSize": 13,
+	"window.menuBarVisibility": "hidden",
+	"window.smoothScrollingWorkaround": true,
+	"window.titleBarStyle": "custom",
+	"workbench.colorTheme": "One Dark Pro",
+	"workbench.statusBar.feedback.visible": false,
+	"zenMode.centerLayout": false
 }
