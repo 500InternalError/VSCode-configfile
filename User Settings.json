@@ -1,22 +1,52 @@
 {
 	"C_Cpp.clang_format_sortIncludes": true,
+	"C_Cpp.default.browse.databaseFilename": "",
+	"C_Cpp.default.browse.limitSymbolsToIncludedHeaders": true,
+	"C_Cpp.default.browse.path": [
+		"C:/Program Files/LLVM/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++",
+		"C:/Program Files/LLVM/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32",
+		"C:/Program Files/LLVM/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward",
+		"C:/Program Files/LLVM/lib/gcc/x86_64-w64-mingw32/7.3.0/include",
+		"C:/Program Files/LLVM/x86_64-w64-mingw32/include"
+	],
+	"C_Cpp.default.cStandard": "c11",
+	"C_Cpp.default.cppStandard": "c++17",
+	"C_Cpp.default.defines": [
+		"_DEBUG",
+		"UNICODE",
+		"__GNUC__=7",
+		"__cdecl=__attribute__((__cdecl__))"
+	],
+	"C_Cpp.default.includePath": [
+		"${workspaceRoot}",
+		"C:/Program Files/LLVM/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++",
+		"C:/Program Files/LLVM/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32",
+		"C:/Program Files/LLVM/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward",
+		"C:/Program Files/LLVM/lib/gcc/x86_64-w64-mingw32/7.3.0/include",
+		"C:/Program Files/LLVM/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed",
+		"C:/Program Files/LLVM/x86_64-w64-mingw32/include"
+	],
+	"C_Cpp.default.intelliSenseMode": "clang-x64",
 	"C_Cpp.errorSquiggles": "Disabled",
 	"C_Cpp.intelliSenseEngine": "Default",
 	"clang.cflags": [
 		"--target=x86_64-w64-mingw",
 		"-std=c11",
-		"-Wall"
+		"-Wall",
+		"-lm"
 	],
 	"clang.completion.enable": false,
 	"clang.cxxflags": [
 		"--target=x86_64-w64-mingw",
 		"-std=c++17",
-		"-Wall"
+		"-Wall",
+		"-lm"
 	],
+	"clang.diagnostic.delay": 1500,
 	"code-runner.clearPreviousOutput": false,
 	"code-runner.executorMap": {
-		"c": "cd $dir && gcc \"$fileName\" -o \"$fileNameWithoutExt.exe\" -Wall -g -std=c11 && & '$dir$fileNameWithoutExt.exe'",
-		"cpp": "cd $dir && g++ \"$fileName\" -o \"$fileNameWithoutExt.exe\" -Wall -g -std=c++17 && & '$dir$fileNameWithoutExt.exe'"
+		"c": "cd $dir && gcc \"$fileName\" -o \"$fileNameWithoutExt.exe\" -Wall -lm -std=c11 && & '$dir$fileNameWithoutExt.exe'",
+		"cpp": "cd $dir && g++ \"$fileName\" -o \"$fileNameWithoutExt.exe\" -Wall -lm -std=c++17 && & '$dir$fileNameWithoutExt.exe'"
 	},
 	"code-runner.preserveFocus": true,
 	"code-runner.runInTerminal": true,
@@ -29,13 +59,21 @@
 	"editor.formatOnType": true,
 	"editor.insertSpaces": false,
 	"editor.snippetSuggestions": "top",
+	"explorer.confirmDelete": false,
 	"files.autoGuessEncoding": true,
 	"files.defaultLanguage": "cpp",
 	"git.ignoreMissingGitWarning": true,
+	"markdown.preview.fontFamily": "'PingFang SC', -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'HelveticaNeue-Light', 'Ubuntu', 'Droid Sans', sans-serif",
 	"terminal.integrated.fontSize": 13,
+	"terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
 	"window.menuBarVisibility": "hidden",
 	"window.smoothScrollingWorkaround": true,
 	"window.titleBarStyle": "custom",
+	"window.zoomLevel": 0,
+	"workbench.colorCustomizations": {
+		"titleBar.activeBackground": "#21252B",
+		"titleBar.inactiveBackground": "#282c34"
+	},
 	"workbench.colorTheme": "One Dark Pro",
 	"workbench.statusBar.feedback.visible": false,
 	"zenMode.centerLayout": false
