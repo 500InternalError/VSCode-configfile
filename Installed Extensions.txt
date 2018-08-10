@@ -2,7 +2,7 @@ C/C++
 C/C++ Clang Command Adapter
 Code Runner
 One Dark Pro
-x86 and x86_64 Assembly
 Optical:
 Sort JSON objects
+x86 and x86_64 Assembly
 XML Tools
