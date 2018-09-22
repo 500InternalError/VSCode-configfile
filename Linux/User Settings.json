@@ -3,14 +3,14 @@
 	"C_Cpp.default.browse.databaseFilename": "",
 	"C_Cpp.default.browse.limitSymbolsToIncludedHeaders": true,
 	"C_Cpp.default.browse.path": [
-		"/usr/include/c++/7.2.0/tr1",
-		"/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/include",
-		"/usr/include/c++/7.2.0",
-		"/usr/include/c++/7.2.0/x86_64-pc-linux-gnu",
-		"/usr/include/c++/7.2.0/backward",
+		"/usr/include/c++/8.2.1/tr1",
+		"/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include",
+		"/usr/include/c++/8.2.1",
+		"/usr/include/c++/8.2.1/x86_64-pc-linux-gnu",
+		"/usr/include/c++/8.2.1/backward",
 		"/usr/include",
 		"/usr/local/include",
-		"/usr/include/c++/7.2.0/tr1",
+		"/usr/include/c++/8.2.1/tr1",
 		"/usr/include/linux",
 		"${workspaceRoot}"
 	],
@@ -18,33 +18,21 @@
 	"C_Cpp.default.cppStandard": "c++17",
 	"C_Cpp.default.defines": [],
 	"C_Cpp.default.includePath": [
-		"usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/include",
-		"/usr/include/c++/7.2.0",
-		"/usr/include/c++/7.2.0/tr1",
-		"/usr/include/c++/7.2.0/x86_64-pc-linux-gnu",
-		"/usr/include/c++/7.2.0/backward",
+		"usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include",
+		"/usr/include/c++/8.2.1",
+		"/usr/include/c++/8.2.1/tr1",
+		"/usr/include/c++/8.2.1/x86_64-pc-linux-gnu",
+		"/usr/include/c++/8.2.1/backward",
 		"/usr/include",
 		"/usr/local/include",
 		"${workspaceRoot}",
-		"/usr/include/c++/7.2.0/tr1",
+		"/usr/include/c++/8.2.1/tr1",
 		"/usr/include/linux",
-		"/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/include"
+		"/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/include"
 	],
 	"C_Cpp.default.intelliSenseMode": "clang-x64",
 	"C_Cpp.errorSquiggles": "Disabled",
 	"C_Cpp.intelliSenseEngine": "Default",
-	"clang.cflags": [
-		"-std=c11",
-		"-Wall",
-		"-lm"
-	],
-	"clang.completion.enable": false,
-	"clang.cxxflags": [
-		"-std=c++17",
-		"-Wall",
-		"-lm"
-	],
-	"clang.diagnostic.delay": 2000,
 	"code-runner.clearPreviousOutput": false,
 	"code-runner.executorMap": {
 		"c": "cd $dir && gcc $fileName -o ${fileBasenameNoExtension}.out -lm && $dir${fileBasenameNoExtension}.out",

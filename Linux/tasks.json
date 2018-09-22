@@ -1,43 +1,42 @@
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "taskName": "Compile",
-            "type": "shell",
-            "command": "g++",
-            "args": [
-                "${file}",
-                "-o", // 指定输出文件名，不加该参数则默认输出a.exe
-                "${fileDirname}/${fileBasenameNoExtension}.out",
-                "-lm"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true // 设为false可做到一个tasks.json配置多个编译指令，需要自己修改本文件，我这里不多提
-            },
-            "presentation": {
-                "echo": true,
-                "reveal": "silent", // 设置是否在“终端”中显示编译信息，可以为always，silent，never。一些错误提示也在这里，但是因为有静态检测，我就设为silent了。
-                "focus": false,
-                "panel": "shared" // 不同的文件的编译信息共享一个终端面板
-            },
-            "problemMatcher": {
-                "owner": "cpp",
-                "fileLocation": [
-                    "relative",
-                    "/"
-                ],
-                "pattern": {
-                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$", // 正则表达式，用于描述在“问题”栏中显示的信息。
-                    "file": 1,
-                    "line": 2,
-                    "column": 3,
-                    "severity": 4,
-                    "message": 5
-                }
-            }
-        }
-    ]
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"taskName": "Compile",
+			"type": "shell",
+			"command": "g++",
+			"args": [
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}/${fileBasenameNoExtension}.out",
+				"-lm"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"presentation": {
+				"echo": true,
+				"reveal": "silent",
+				"focus": false,
+				"panel": "shared"
+			},
+			"problemMatcher": {
+				"owner": "cpp",
+				"fileLocation": [
+					"relative",
+					"/"
+				],
+				"pattern": {
+					"regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+					"file": 1,
+					"line": 2,
+					"column": 3,
+					"severity": 4,
+					"message": 5
+				}
+			}
+		}
+	]
 }
