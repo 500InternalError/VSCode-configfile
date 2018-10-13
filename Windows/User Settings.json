@@ -42,7 +42,8 @@
 		"-Wall",
 		"-lm"
 	],
-	"clang.diagnostic.delay": 1500,
+	"clang.diagnostic.delay": 2000,
+	"clang.executable": "C:/Program Files/LLVM/bin/clang.exe",
 	"code-runner.clearPreviousOutput": false,
 	"code-runner.executorMap": {
 		"c": "cd $dir && gcc \"$fileName\" -o \"$fileNameWithoutExt.exe\" -Wall -lm -std=c11 && & '$dir$fileNameWithoutExt.exe'",
@@ -66,8 +67,7 @@
 	"markdown.preview.fontFamily": "'PingFang SC', -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'HelveticaNeue-Light', 'Ubuntu', 'Droid Sans', sans-serif",
 	"terminal.integrated.fontSize": 13,
 	"terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-	"window.menuBarVisibility": "hidden",
-	"window.smoothScrollingWorkaround": true,
+	"window.menuBarVisibility": "toggle",
 	"window.titleBarStyle": "custom",
 	"window.zoomLevel": 0,
 	"workbench.colorCustomizations": {
@@ -75,6 +75,8 @@
 		"titleBar.inactiveBackground": "#282c34"
 	},
 	"workbench.colorTheme": "One Dark Pro",
+	"workbench.editor.enablePreview": false,
+	"workbench.editor.enablePreviewFromQuickOpen": false,
 	"workbench.statusBar.feedback.visible": false,
 	"zenMode.centerLayout": false
 }

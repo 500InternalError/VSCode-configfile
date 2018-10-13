@@ -33,10 +33,12 @@
 	"C_Cpp.default.intelliSenseMode": "clang-x64",
 	"C_Cpp.errorSquiggles": "Disabled",
 	"C_Cpp.intelliSenseEngine": "Default",
+	"clang.completion.enable": false,
+	"clang.diagnostic.delay": 2000,
 	"code-runner.clearPreviousOutput": false,
 	"code-runner.executorMap": {
-		"c": "cd $dir && gcc $fileName -o ${fileBasenameNoExtension}.out -lm && $dir${fileBasenameNoExtension}.out",
-		"cpp": "cd $dir && g++ $fileName -o ${fileBasenameNoExtension}.out -lm && $dir${fileBasenameNoExtension}.out"
+		"c": "cd $dir && gcc \"$fileName\" -o \"$fileNameWithoutExt.exe\" -Wall -lm -std=c11 && & '$dir$fileNameWithoutExt.exe'",
+		"cpp": "cd $dir && g++ \"$fileName\" -o \"$fileNameWithoutExt.exe\" -Wall -lm -std=c++17 && & '$dir$fileNameWithoutExt.exe'"
 	},
 	"code-runner.preserveFocus": true,
 	"code-runner.runInTerminal": true,
@@ -63,6 +65,8 @@
 		"titleBar.inactiveBackground": "#282c34"
 	},
 	"workbench.colorTheme": "One Dark Pro",
+	"workbench.editor.enablePreview": false,
+	"workbench.editor.enablePreviewFromQuickOpen": false,
 	"workbench.statusBar.feedback.visible": false,
 	"zenMode.centerLayout": false
 }
