@@ -37,8 +37,8 @@
 	"clang.diagnostic.delay": 2000,
 	"code-runner.clearPreviousOutput": false,
 	"code-runner.executorMap": {
-		"c": "cd $dir && gcc \"$fileName\" -o \"$fileNameWithoutExt.exe\" -Wall -lm -std=c11 && & '$dir$fileNameWithoutExt.exe'",
-		"cpp": "cd $dir && g++ \"$fileName\" -o \"$fileNameWithoutExt.exe\" -Wall -lm -std=c++17 && & '$dir$fileNameWithoutExt.exe'"
+		"c": "cd $dir && gcc $fileName -o ${fileBasenameNoExtension}.out -lm && $dir${fileBasenameNoExtension}.out",
+		"cpp": "cd $dir && g++ $fileName -o ${fileBasenameNoExtension}.out -lm && $dir${fileBasenameNoExtension}.out"
 	},
 	"code-runner.preserveFocus": true,
 	"code-runner.runInTerminal": true,
