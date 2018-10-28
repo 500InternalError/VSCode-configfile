@@ -10,6 +10,7 @@
 		"C:/Program Files/LLVM/x86_64-w64-mingw32/include"
 	],
 	"C_Cpp.default.cStandard": "c11",
+	"C_Cpp.default.compilerPath": "C:\\Program Files\\LLVM\\bin\\g++.exe",
 	"C_Cpp.default.cppStandard": "c++17",
 	"C_Cpp.default.defines": [
 		"_DEBUG",
